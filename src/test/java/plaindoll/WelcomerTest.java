@@ -32,4 +32,8 @@ public class WelcomerTest {
 	public void welcomerSaysSomething(){
 		assertThat(welcomer.saySome(), containsString("something"));
 	}
+	@Test
+    public void welcomerSaysReply() {
+        assertThat(welcomer.sayReply(), containsString("hunter"));
+    }
 }
